@@ -13,7 +13,13 @@ This project for the week 1 from Build your portfolio project in alx
 - [ ] Volunteer page
 - [ ] Blog page
 
+## Technologies
 
+* FLask
+* python
+* javascript
+* html
+* css
 
 ## License
 

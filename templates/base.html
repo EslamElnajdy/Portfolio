@@ -8,8 +8,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/about.css') }}">
 </head>
 <body>
+    <div class="menu">
+        <img  width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/menu--v3.png" alt="menu--v3"/>
+    </div>
     <header>
 
+        <img class="close" width="24" height="24" src="https://img.icons8.com/material-two-tone/24/delete-sign.png" alt="delete-sign"/>
+        
         <div class="avatar">
             <div>
                 <img src="/static/images/avatar.png" alt="avatar">
@@ -19,79 +24,119 @@
         <nav>
             <ul class="elements">
                 <li>
-                    {% if title == About %}
+                    {% if title == "About" %}
                         <div class="active">
                     {% else %}
                         <div>
                     {% endif %}
-                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/about.png" alt="about"/>
-                            <a href="/">About</a>
+                            <a href="/">
+                                <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/about.png" alt="about"/>
+                                About
+                            </a>
                         </div>
                 </li>
                 <li>
-                    <div>
-                        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/group-of-projects.png" alt="group-of-projects"/>
-                        <a href="/projects">Projects</a>
+                    {% if title == "Projects" %}
+                        <div class="active">
+                    {% else %}
+                        <div>
+                    {% endif %}
+                        <a href="/projects">
+                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/group-of-projects.png" alt="group-of-projects"/>
+                            Projects
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div>
-                        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/persuasion-skills.png" alt="persuasion-skills"/>
-                        <a href="#">Skills</a>
+                    {% if title == "Skills" %}
+                        <div class="active">
+                    {% else %}
+                        <div>
+                    {% endif %}
+                        <a href="/skills">
+                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/persuasion-skills.png" alt="persuasion-skills"/>
+                            Skills
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div>
-                        <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/50/graduation-cap--v1.png" alt="graduation-cap--v1"/>
-                        <a href="#">Education</a>
+                    {% if title == "Education" %}
+                        <div class="active">
+                    {% else %}
+                        <div>
+                    {% endif %}
+                        <a href="/education">
+                            <img width="20" height="20" src="https://img.icons8.com/ios-glyphs/50/graduation-cap--v1.png" alt="graduation-cap--v1"/>
+                            Education
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div>
-                        <img width="25" height="25" src="https://img.icons8.com/external-soleicons-solid-amoghdesign/17/000000/external-accomplishments-soleicons-solid-vol-2-soleicons-solid-amoghdesign.png" alt="external-accomplishments-soleicons-solid-vol-2-soleicons-solid-amoghdesign"/>
-                        <a href="#">Achievements</a>
+                    {% if title == "Achievements" %}
+                        <div class="active">
+                    {% else %}
+                        <div>
+                    {% endif %}
+                        <a href="/achievements">
+                            <img width="25" height="25" src="https://img.icons8.com/external-soleicons-solid-amoghdesign/17/000000/external-accomplishments-soleicons-solid-vol-2-soleicons-solid-amoghdesign.png" alt="external-accomplishments-soleicons-solid-vol-2-soleicons-solid-amoghdesign"/>
+                            Achievements
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div>
-                        <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/volunteering.png" alt="volunteering"/>
-                        <a href="#">Volunteer Work</a>
+                    {% if title == "Volunteer Work" %}
+                        <div class="active">
+                    {% else %}
+                        <div>
+                    {% endif %}
+                        <a href="/volunteer-Work">
+                            <img width="20" height="20" src="https://img.icons8.com/ios-filled/50/volunteering.png" alt="volunteering"/>
+                            Volunteer Work
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div>
-                        <img width="20" height="20" src="https://img.icons8.com/external-glyph-andi-nur-abdillah/64/external-Blog-digital-nomad-(glyph)-glyph-andi-nur-abdillah.png" alt="external-Blog-digital-nomad-(glyph)-glyph-andi-nur-abdillah"/>
-                        <a href="#">Blog</a>
+                    {% if title == "Blog" %}
+                        <div class="active">
+                    {% else %}
+                        <div>
+                    {% endif %}
+                        <a href="/blog">
+                            <img width="20" height="20" src="https://img.icons8.com/external-glyph-andi-nur-abdillah/64/external-Blog-digital-nomad-(glyph)-glyph-andi-nur-abdillah.png" alt="external-Blog-digital-nomad-(glyph)-glyph-andi-nur-abdillah"/>
+                            Blog
+                        </a>
                     </div>
                 </li>
             </ul>
-
+        </nav>
+        <div>
             <ul class="social">
                 <li>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/eslam-mohamed-85a056247/" target="_blank">
                         <img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/linkedin.png" alt="linkedin"/>
                     
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://github.com/EslamElnajdy" target="_blank">
                         <img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/github.png" alt="github"/>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://twitter.com/eslam_najdy" target="_blank">
                         <img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt="twitter--v1"/>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="" target="_blank">
                         <img width="25" height="25" src="https://img.icons8.com/material-rounded/24/mail.png" alt="mail"/>
                     </a>
                 </li>
             </ul>
-        </nav>
+        </div>
     </header>
 
+    <div class="helper-css"></div>
     <div class="main">
         <div class="content">
             {% block content %}
@@ -101,5 +146,7 @@
             <p>&copy; {{ year }} Eslam Mohamed. All rights reserved.</p>
         </footer>
     </div>
+
+    <script src="/static/scripts/base.js"></script>
 </body>
 </html>

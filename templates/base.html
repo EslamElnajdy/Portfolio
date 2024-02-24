@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %} - Eslam Mohamed</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/base.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/blog.css') }}">
 </head>
 <body>
     <div class="menu">
@@ -19,6 +20,8 @@
             <div>
                 <img src="/static/images/avatar.png" alt="avatar">
             </div>
+            <p class="name">Eslam Mohamed</p>
+            <p class="title">Software Engineer</p>
         </div>
 
         <nav>

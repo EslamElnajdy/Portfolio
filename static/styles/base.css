@@ -61,11 +61,21 @@ header .avatar img {
 .avatar img:hover {
     transform: scale(1.2);
 }
+header .avatar p.name {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 17px;
+}
+header .avatar p.title {
+    margin-top: 10px;
+    opacity: 0.5;
+    font-size: 15px;
+}
 header nav {
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    margin-top: -150px;
 }
 
 header nav .elements {
@@ -120,6 +130,9 @@ header div .social li:not(:last-child) {
 /* div >> content */
 body .main{
     height: 100vh;
+    width: 100vw;
+    max-width: 25vw;
+    min-width: 58vw;
 
     display: flex;
     flex-direction: column;
@@ -171,6 +184,9 @@ div.content {
         grid-template-columns:1fr;
         overflow-y: hidden;
     
+    }
+    body .main {
+        max-width: 100vw;
     }
 }
 @media screen and (min-width: 1152px) {

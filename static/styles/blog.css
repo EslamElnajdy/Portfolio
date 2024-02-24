@@ -1,0 +1,24 @@
+.blog div {
+    padding: 27px 20px;
+    margin-bottom: 25px;
+    border-radius: 0.625rem;
+    box-shadow: rgb(104, 104, 104, 0.05) 0 2px 6px 0, rgba(211, 209, 209, 0.15) 0 0 0 1px;
+}
+.blog div:hover {
+    transition: background-color .35s ease-in-out;
+    background: #eeeeee;
+}
+.blog div h3 {
+    margin-bottom: 15px;
+}
+.blog div .date {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #757575;
+    display: flex;
+    align-items: center;
+}
+.blog div .date img {
+    margin-right: 5px;
+    opacity: 0.8;
+}

@@ -46,4 +46,4 @@ def blog():
     return render_template('blog.html', year=year, title="Blog")
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)

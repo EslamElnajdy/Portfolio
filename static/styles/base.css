@@ -85,7 +85,6 @@ header nav .elements {
     margin-bottom: 50px;
     height: 100%;
     gap: 20px;
-    /* align-items: center; */
 }
 header nav .elements li {
     font-size: 14.4px;
@@ -182,8 +181,6 @@ div.content {
     body {
         display: grid;
         grid-template-columns:1fr;
-        overflow-y: hidden;
-    
     }
     body .main {
         max-width: 100vw;

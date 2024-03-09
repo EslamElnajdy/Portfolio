@@ -6,11 +6,6 @@ This project for the week 1 from Build your portfolio project in alx
 ## pages
 
 - [x] About page
-- [ ] Projects page
-- [ ] Skills page
-- [ ] Education page
-- [ ] Achievements page
-- [ ] Volunteer page
 - [ ] Blog page
 
 ## Technologies

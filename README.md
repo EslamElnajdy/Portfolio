@@ -1,4 +1,4 @@
 # Portfolio
 Mini Portfolio
 
-![](./images/Screenshot.png)
+![](./images/screenshot.png)

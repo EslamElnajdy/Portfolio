@@ -14,8 +14,9 @@
     <nav>
         <div class="logo">Eslam</div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a onclick="scrollToSection('home')">Home</a></li>
+            <li><a onclick="scrollToSection('about')">About</a></li>
+            <li><a onclick="scrollToSection('services')">Services</a></li>
 
         </ul>
     </nav>
@@ -38,6 +39,46 @@
         </div>
     </header>
 
+    <section class="about" id="about">
+        <h2>About</h2>
+        <p>
+            I am an experienced full stack software engineer, 
+            currently working remotely at ALX Africa. I have contributed to 
+            various projects, including C programming, printf() replication, 
+            and an Airbnb web app clone. I am proficient in HTML, CSS, 
+            JavaScript, React.js, Angular, Python, and Git. He holds a 
+            Bachelor's in Computer Engineering and has completed additional 
+            training in web development and JavaScript. With a passion for 
+            problem-solving and continuous learning, I am well-equipped 
+            to thrive in software engineering roles.
+        </p>
+    </section>
+    <section class="services" id="services">
+        <h2>Services</h2>
+        <p class="p1">My expertise and services</p>
+        <div class="content">
+            <div>
+                <p>UX/UI Design</p>
+            </div>
+            <div>
+                <p>Branding</p>
+            </div>
+            <div>
+                <p>Websites</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        2024 &copy; ALL RIGHTS RESERVED
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+          var section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        </script>
 </body>
 
 </html>

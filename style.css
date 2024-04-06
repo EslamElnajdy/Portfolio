@@ -15,6 +15,7 @@ img{
 a{
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 ul {
     list-style: none;
@@ -26,8 +27,7 @@ body{
     color: #fff;
     max-width: 1200px;
     margin: auto;
-    padding: 0 10px;
-    height: 100vh;
+    padding: 0 20px;
 }
 
 nav {
@@ -46,10 +46,10 @@ nav ul {
 }
 
 header {
-    min-height: 50%;
+    height: 100vh;
     display: flex;
-    gap: 10px;
-    margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;
 }
 .left {
     width: 50%;
@@ -72,8 +72,7 @@ p span {
     margin-top: 20px;
 }
 .left .links {
-    position: absolute;
-    bottom: 0;
+   margin-top: 100px;
 }
 .links i {
     margin-right: 10px;
@@ -90,6 +89,52 @@ a:hover {
 .right img{
     width: 100%;
     max-width: 445px;
+}
+
+/* about section */
+.about {
+    min-height: 50vh;
+}
+.about h2, .services h2 {
+    color: rgb(33, 238, 33);
+    margin-bottom: 50px;
+    text-align: center;
+}
+.about p {
+    color: #999999;
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+/* service section */
+.services {
+    height: 50vh;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.services .p1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.services .content {
+    display: flex;
+    justify-content: space-between;
+}
+.content div {
+    width: 200px;
+    text-align: center;
+    border: 1px solid rgb(33, 238, 33);
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+.content div p {
+    font-size: 20px;
+}
+footer {
+    height: 50px;
+    text-align: center;
+    color: #999999;
 }
 @media (width < 900px){
     nav {
@@ -118,6 +163,11 @@ a:hover {
         font-size: 16px;
         margin-top: 15px;
     }
+    .services .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
   
 }
 @media (width < 600px){
@@ -131,3 +181,4 @@ a:hover {
         max-width: 100%;
     }
 }
+

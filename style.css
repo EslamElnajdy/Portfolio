@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+    color: #fff;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+    height: 100vh;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 0;
+}
+nav div {
+    font-size: 30px;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    min-height: 50%;
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+.left {
+    width: 50%;
+    position: relative;
+    
+}
+p span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(33, 238, 33);
+}
+.left p:first-child {
+    color: rgb(33, 238, 33);
+}
+.left p:nth-child(2) {
+    font-size: 50px;
+    margin-top: 50px;
+}
+.left p:nth-child(3) {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.left .links {
+    position: absolute;
+    bottom: 0;
+}
+.links i {
+    margin-right: 10px;
+}
+i:hover {
+    color: rgb(33, 238, 33);
+}
+a:hover {
+    color: rgb(33, 238, 33);
+}
+.right {
+    max-width: 50%;
+}
+.right img{
+    width: 100%;
+    max-width: 445px;
+}
+@media (width < 900px){
+    nav {
+        width: 70%;
+        margin: auto;
+    }
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .left {
+        width: 70%;
+    }
+    .right {
+        max-width: 70%;
+    }
+    .left .links {
+        position: relative;
+        margin: 25px 0;
+    }
+    .left p:nth-child(2) {
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    .left p:nth-child(3) {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+  
+}
+@media (width < 600px){
+    nav {
+        width: 100%;
+    }
+    .left {
+        width: 100%;
+    }
+    .right {
+        max-width: 100%;
+    }
+}
